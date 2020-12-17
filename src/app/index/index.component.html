@@ -1,0 +1,4 @@
+<h1>Photo List -- {{ globalService.photosList.length }} Photos on file</h1>
+<p *ngFor="let photo of globalService.photosList">
+  <a [routerLink]="['/detail', photo.id]">{{ photo.title }}</a>
+</p>
